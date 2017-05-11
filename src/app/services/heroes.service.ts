@@ -83,6 +83,7 @@ private heroes:Heroe[] = [
 
       }
 
+      //console.log(heroesArr);
       return heroesArr;
 
     }
