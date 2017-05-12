@@ -1,6 +1,12 @@
 <h1>Heroes <small>de Marvel y DC</small></h1>
 <hr>
 
+<div  *ngIf="heroes.length == 0"
+      class="alert alert-warning" role="alert">
+  <strong>No hay registros</strong> que mostrar.
+</div>
+
+
 <div class="card-columns">
 
   <div class="card animated fadeIn fast" *ngFor="let heroe of heroes, let i = index" >
